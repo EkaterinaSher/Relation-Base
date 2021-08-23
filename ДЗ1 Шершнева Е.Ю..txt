@@ -1,0 +1,15 @@
+1. user=root
+password=
+
+2. CREATE DATABASE example;
+USE example
+CREATE TABLE `users` (
+	`id` INT(10) NULL DEFAULT NULL,
+	`name` CHAR(30) NULL DEFAULT NULL COLLATE 'utf8mb4_unicode_ci'
+)
+CREATE DATABASE sample;
+3.mysqldump -u root -p examplees > C:/my_file.sql
+ mysql -u root -p sample < C:/my_file.sql
+
+
+Примечание: создавала базы и таблицы в HeidiSQL с помощью кода, дамп сделала с помощью консоли, тк в HeidiSql данные команды не работали.
